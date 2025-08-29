@@ -22,35 +22,49 @@
   </head>
   <body>
     <!-- navbar -->
-    <div class="flex justify-between items-center p-3 ml-5 mr-5">
-      <div class="flex items-center">
-        <img src="./assets/logo.png" class="w-15 h-15 mr-3" alt="" />
+    <div
+      class="flex flex-col md:flex-row justify-between items-center p-3 mx-5 gap-3 md:gap-0"
+    >
+      <!-- Logo and Title -->
+      <div class="flex items-center gap-3">
+        <img
+          src="./assets/logo.png"
+          class="w-12 h-12 md:w-15 md:h-15"
+          alt="Logo"
+        />
         <div>
-          <h1 class="font-bold text-2xl text-green-800">
+          <h1
+            class="font-bold text-xl md:text-2xl text-green-800 leading-tight"
+          >
             Emergency<br />Service
           </h1>
         </div>
       </div>
-      <div class="flex gap-4">
+
+      <!-- Buttons -->
+      <div class="flex flex-wrap gap-3 md:gap-4 mt-2 md:mt-0">
         <button
-          class="btn btn-soft btn-accent flex items-center rounded-full text-bold text-black text-lg"
+          class="btn btn-soft btn-accent flex items-center rounded-full font-bold text-black text-lg px-3 shadow-lg"
         >
           <span id="love-count">0</span>
-          <img src="./assets/heart.png" class="w-5 h-5" alt="" />
+          <img src="./assets/heart.png" class="w-5 h-5 ml-1" alt="Love" />
         </button>
+
         <button
-          class="btn btn-soft btn-accent flex items-center rounded-full text-bold text-black text-lg"
+          class="btn btn-soft btn-accent flex items-center rounded-full font-bold text-black text-lg px-3 shadow-lg"
         >
-          <span id="coinCount">100</span
-          ><img src="./assets/coin.png" class="w-5 h-5" alt="" />
+          <span id="coinCount">100</span>
+          <img src="./assets/coin.png" class="w-5 h-5 ml-1" alt="Coin" />
         </button>
+
         <button
-          class="btn btn-success rounded-full text-bold text-black text-base"
+          class="btn btn-success rounded-full font-bold text-black text-base px-3 shadow-lg"
         >
           <span id="copy-count">0</span> Copy
         </button>
       </div>
     </div>
+
     <!-- title section -->
     <div
       class="text-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] p-6"
@@ -64,8 +78,10 @@
     </div>
 
     <!-- card section -->
-    <div class="p-10 bg-green-50 flex justify-evenly">
-      <div class="grid grid-cols-3 gap-8">
+    <div
+      class="p-5 bg-green-50 flex flex-col lg:flex-row lg:justify-evenly gap-6"
+    >
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 flex-1">
         <div class="p-8 rounded-3xl bg-white shadow-lg">
           <div class="flex justify-between">
             <div class="rounded-2xl bg-[#FFE3E2] p-3">
@@ -83,11 +99,14 @@
           >
             All</button
           ><br />
-          <button class="btn mt-5 text-gray-500 bg-white pl-14 pr-14" id="addcopy1">
-            <i class="fa-regular fa-copy text-gray-500" ></i> Copy
+          <button
+            class="btn mt-5 text-gray-500 bg-white pl-10 pr-10 btn-copy"
+            id="addcopy1"
+          >
+            <i class="fa-regular fa-copy text-gray-500"></i> Copy
           </button>
           <button
-            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600"
+            class="btn btn-active btn-success mt-5 text-white pl-10 pr-10 bg-green-600"
             id="call1"
           >
             <i class="fa-solid fa-phone"></i> Call
@@ -111,11 +130,14 @@
           >
             Police</button
           ><br />
-          <button class="btn mt-5 text-gray-500 bg-white pl-14 pr-14" id="addcopy2">
-            <i class="fa-regular fa-copy text-gray-500" ></i> Copy
+          <button
+            class="btn mt-5 text-gray-500 bg-white pl-10 pr-10 btn-copy"
+            id="addcopy2"
+          >
+            <i class="fa-regular fa-copy text-gray-500"></i> Copy
           </button>
           <button
-            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600"
+            class="btn btn-active btn-success mt-5 text-white pl-10 pr-10 bg-green-600"
             id="call2"
           >
             <i class="fa-solid fa-phone"></i> Call
@@ -139,11 +161,14 @@
           >
             Fire</button
           ><br />
-          <button class="btn mt-5 text-gray-500 bg-white pl-14 pr-14" id="addcopy3">
-            <i class="fa-regular fa-copy text-gray-500" ></i> Copy
+          <button
+            class="btn mt-5 text-gray-500 bg-white pl-10 pr-10 btn-copy"
+            id="addcopy3"
+          >
+            <i class="fa-regular fa-copy text-gray-500"></i> Copy
           </button>
           <button
-            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600"
+            class="btn btn-active btn-success mt-5 text-white pl-10 pr-10 bg-green-600"
             id="call3"
           >
             <i class="fa-solid fa-phone"></i> Call
@@ -167,11 +192,14 @@
           >
             Health</button
           ><br />
-          <button class="btn mt-5 text-gray-500 bg-white pl-14 pr-14" id="addcopy4">
-            <i class="fa-regular fa-copy text-gray-500" ></i> Copy
+          <button
+            class="btn mt-5 text-gray-500 bg-white pl-10 pr-10 btn-copy"
+            id="addcopy4"
+          >
+            <i class="fa-regular fa-copy text-gray-500"></i> Copy
           </button>
           <button
-            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600"
+            class="btn btn-active btn-success mt-5 text-white pl-10 pr-10 bg-green-600"
             id="call4"
           >
             <i class="fa-solid fa-phone"></i> Call
@@ -195,11 +223,14 @@
           >
             Help</button
           ><br />
-          <button class="btn mt-5 text-gray-500 bg-white pl-14 pr-14" id="addcopy5">
-            <i class="fa-regular fa-copy text-gray-500" ></i> Copy
+          <button
+            class="btn mt-5 text-gray-500 bg-white pl-10 pr-10 btn-copy"
+            id="addcopy5"
+          >
+            <i class="fa-regular fa-copy text-gray-500"></i> Copy
           </button>
           <button
-            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600"
+            class="btn btn-active btn-success mt-5 text-white pl-10 pr-10 bg-green-600"
             id="call5"
           >
             <i class="fa-solid fa-phone"></i> Call
@@ -223,11 +254,14 @@
           >
             Govt.</button
           ><br />
-          <button class="btn mt-5 text-gray-500 bg-white pl-14 pr-14" id="addcopy6">
-            <i class="fa-regular fa-copy text-gray-500" ></i> Copy
+          <button
+            class="btn mt-5 text-gray-500 bg-white pl-10 pr-10 btn-copy"
+            id="addcopy6"
+          >
+            <i class="fa-regular fa-copy text-gray-500"></i> Copy
           </button>
           <button
-            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600"
+            class="btn btn-active btn-success mt-5 text-white pl-10 pr-10 bg-green-600"
             id="call6"
           >
             <i class="fa-solid fa-phone"></i> Call
@@ -251,11 +285,14 @@
           >
             Electricity</button
           ><br />
-          <button class="btn mt-5 text-gray-500 bg-white pl-14 pr-14" id="addcopy7">
-            <i class="fa-regular fa-copy text-gray-500" ></i> Copy
+          <button
+            class="btn mt-5 text-gray-500 bg-white pl-10 pr-10 btn-copy"
+            id="addcopy7"
+          >
+            <i class="fa-regular fa-copy text-gray-500"></i> Copy
           </button>
           <button
-            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600"
+            class="btn btn-active btn-success mt-5 text-white pl-10 pr-10 bg-green-600"
             id="call7"
           >
             <i class="fa-solid fa-phone"></i> Call
@@ -279,11 +316,14 @@
           >
             Ngo</button
           ><br />
-          <button class="btn mt-5 text-gray-500 bg-white pl-14 pr-14" id="addcopy8">
-            <i class="fa-regular fa-copy text-gray-500" ></i> Copy
+          <button
+            class="btn mt-5 text-gray-500 bg-white pl-10 pr-10 btn-copy"
+            id="addcopy8"
+          >
+            <i class="fa-regular fa-copy text-gray-500"></i> Copy
           </button>
           <button
-            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600"
+            class="btn btn-active btn-success mt-5 text-white pl-10 pr-10 bg-green-600"
             id="call8"
           >
             <i class="fa-solid fa-phone"></i> Call
@@ -307,18 +347,21 @@
           >
             Travel</button
           ><br />
-          <button class="btn mt-5 text-gray-500 bg-white pl-14 pr-14" id="addcopy9">
-            <i class="fa-regular fa-copy text-gray-500" ></i> Copy
+          <button
+            class="btn mt-5 text-gray-500 bg-white pl-10 pr-10 btn-copy"
+            id="addcopy9"
+          >
+            <i class="fa-regular fa-copy text-gray-500"></i> Copy
           </button>
           <button
-            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600"
+            class="btn btn-active btn-success mt-5 text-white pl-10 pr-10 bg-green-600"
             id="call9"
           >
             <i class="fa-solid fa-phone"></i> Call
           </button>
         </div>
       </div>
-      <div class="p-8 rounded-3xl bg-white ml-10 w-[400px] shadow-lg">
+      <div class="p-8 rounded-3xl bg-white lg:ml-10 lg:w-[350px] shadow-lg">
         <div class="flex justify-between items-center">
           <div class="font-bold text-xl">
             <i class="fa-regular fa-clock"></i> Call History

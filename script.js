@@ -50,24 +50,39 @@ function setupCallButton(buttonId, serviceName, serviceNumber) {
   });
 }
 
-setupCallButton("call1", "National Emergency Number", "999");
-setupCallButton("call2", "Police Helpline Number", "999");
-setupCallButton("call3", "Fire Service Number", "999");
+setupCallButton("call1", "National Emergency ", "999");
+setupCallButton("call2", "Police Helpline ", "999");
+setupCallButton("call3", "Fire Service ", "999");
 setupCallButton("call4", "Ambulance Service", "1994-999999");
 setupCallButton("call5", "Women & Child Helpline", "109");
 setupCallButton("call6", "Anti-Corruption Helpline", "106");
 setupCallButton("call7", "Electricity Helpline", "16216");
 setupCallButton("call8", "Brac Helpline", "16445");
-setupCallButton("call9", "Bangladesh Railway Helpline", "163");
+setupCallButton("call9", "Bangladesh Railway ", "163");
 
 document.getElementById("clearHistory").addEventListener("click", function () {
   document.querySelector(".call-history").innerHTML = "";
 });
 
-for (let i = 1; i <= 9; i++) {
-  document.getElementById(`addcopy${i}`).addEventListener("click", function (event) {
+function setupCopyButton(buttonId, serviceNumber) {
+  document.getElementById(buttonId).addEventListener("click", function (event) {
     event.preventDefault();
-    const copyCount = document.getElementById("copy-count");
-    copyCount.innerText = parseInt(copyCount.innerText) + 1;
+
+    navigator.clipboard.writeText(serviceNumber).then(() => {
+      alert(`Number copied: ${serviceNumber}`);
+      const copyCount = document.getElementById("copy-count");
+      copyCount.innerText = parseInt(copyCount.innerText) + 1;
+    });
   });
-}   
+}
+
+setupCopyButton("addcopy1", "999");
+setupCopyButton("addcopy2", "999");
+setupCopyButton("addcopy3", "999");
+setupCopyButton("addcopy4", "1994-999999");
+setupCopyButton("addcopy5", "109");
+setupCopyButton("addcopy6", "106");
+setupCopyButton("addcopy7", "16216");
+setupCopyButton("addcopy8", "16445");
+setupCopyButton("addcopy9", "163");
+
