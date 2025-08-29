@@ -32,13 +32,13 @@
         </div>
       </div>
       <div class="flex gap-4">
-        <button class="btn btn-soft btn-accent flex rounded-full">
-          0 <img src="./assets/heart.png" class="w-5 h-5" alt="" />
+        <button class="btn btn-soft btn-accent flex items-center rounded-full text-bold text-black text-lg" >
+          <span id="love-count" >0</span> <img src="./assets/heart.png" class="w-5 h-5" alt="" />
         </button>
-        <button class="btn btn-soft btn-accent flex rounded-full">
-          100 <img src="./assets/coin.png" class="w-5 h-5" alt="" />
+        <button class="btn btn-soft btn-accent flex items-center rounded-full text-bold text-black text-lg">
+          <span id="coinCount">100</span><img src="./assets/coin.png" class="w-5 h-5" alt="" />
         </button>
-        <button class="btn btn-success rounded-full">2 Copy</button>
+        <button class="btn btn-success rounded-full text-bold text-black text-base">0 Copy</button>
       </div>
     </div>
     <!-- title section -->
@@ -56,13 +56,16 @@
     <!-- card section -->
     <div class="p-10 bg-green-50 flex justify-evenly">
       <div class="grid grid-cols-3 gap-8">
+
+
+
         <div class="p-8 rounded-3xl bg-white  shadow-lg ">
           <div class="flex justify-between">
             <div class="rounded-2xl bg-[#FFE3E2] p-3">
               <img src="./assets/emergency.png" class="h-8" alt="" />
             </div>
             <div>
-              <i class="fa-regular fa-heart"></i>
+              <i class=" fa-regular fa-heart" id="addlove1" ></i>
             </div>
           </div>
           <h2 class="font-bold text-2xl mt-2">National Emergency Number</h2>
@@ -77,11 +80,13 @@
             <i class="fa-regular fa-copy text-gray-500"></i> Copy
           </button>
           <button
-            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600"
+            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600" id="call1"
           >
             <i class="fa-solid fa-phone"></i> Call
           </button>
         </div>
+
+
 
         <div class="p-8 rounded-3xl bg-white  shadow-lg ">
           <div class="flex justify-between">
@@ -89,7 +94,7 @@
               <img src="./assets/police.png" class="h-8" alt="" />
             </div>
             <div>
-              <i class="fa-regular fa-heart"></i>
+              <i class=" fa-regular fa-heart" id="addlove2"></i>
             </div>
           </div>
           <h2 class="font-bold text-2xl mt-2">Police Helpline Number</h2>
@@ -104,11 +109,13 @@
             <i class="fa-regular fa-copy text-gray-500"></i> Copy
           </button>
           <button
-            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600"
+            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600" id="call2"
           >
             <i class="fa-solid fa-phone"></i> Call
           </button>
         </div>
+
+
 
         <div class="p-8 rounded-3xl bg-white  shadow-lg">
           <div class="flex justify-between">
@@ -116,7 +123,7 @@
               <img src="./assets/fire-service.png" class="h-8" alt="" />
             </div>
             <div>
-              <i class="fa-regular fa-heart"></i>
+              <i class=" fa-regular fa-heart" id="addlove3"></i>
             </div>
           </div>
           <h2 class="font-bold text-2xl mt-2">Fire Service Number</h2>
@@ -131,11 +138,13 @@
             <i class="fa-regular fa-copy text-gray-500"></i> Copy
           </button>
           <button
-            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600"
+            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600" id="call3"
           >
             <i class="fa-solid fa-phone"></i> Call
           </button>
         </div>
+
+
 
         <div class="p-8 rounded-3xl bg-white shadow-lg">
           <div class="flex justify-between">
@@ -143,7 +152,7 @@
               <img src="./assets/ambulance.png" class="h-8" alt="" />
             </div>
             <div>
-              <i class="fa-regular fa-heart"></i>
+              <i class=" fa-regular fa-heart" id="addlove4"></i>
             </div>
           </div>
           <h2 class="font-bold text-2xl mt-2">Ambulance Service</h2>
@@ -158,11 +167,13 @@
             <i class="fa-regular fa-copy text-gray-500"></i> Copy
           </button>
           <button
-            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600"
+            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600" id="call4"
           >
             <i class="fa-solid fa-phone"></i> Call
           </button>
         </div>
+
+
 
         <div class="p-8 rounded-3xl bg-white  shadow-lg">
           <div class="flex justify-between">
@@ -170,7 +181,7 @@
               <img src="./assets/mother.png" class="h-8" alt="" />
             </div>
             <div>
-              <i class="fa-regular fa-heart"></i>
+              <i class=" fa-regular fa-heart" id="addlove5"></i>
             </div>
           </div>
           <h2 class="font-bold text-2xl mt-2">Women & Child Helpline</h2>
@@ -185,11 +196,13 @@
             <i class="fa-regular fa-copy text-gray-500"></i> Copy
           </button>
           <button
-            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600"
+            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600" id="call5"
           >
             <i class="fa-solid fa-phone"></i> Call
           </button>
         </div>
+
+
 
         <div class="p-8 rounded-3xl bg-white  shadow-lg">
           <div class="flex justify-between">
@@ -197,7 +210,7 @@
               <img src="./assets/corruption.png" class="h-8" alt="" />
             </div>
             <div>
-              <i class="fa-regular fa-heart"></i>
+              <i class=" fa-regular fa-heart" id="addlove6"></i>
             </div>
           </div>
           <h2 class="font-bold text-2xl mt-2">Anti-Corruption Helpline</h2>
@@ -212,11 +225,13 @@
             <i class="fa-regular fa-copy text-gray-500"></i> Copy
           </button>
           <button
-            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600"
+            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600" id="call6"
           >
             <i class="fa-solid fa-phone"></i> Call
           </button>
         </div>
+
+
 
         <div class="p-8 rounded-3xl bg-white  shadow-lg">
           <div class="flex justify-between">
@@ -224,7 +239,7 @@
               <img src="./assets/eco-house.png" class="h-8" alt="" />
             </div>
             <div>
-              <i class="fa-regular fa-heart"></i>
+              <i class=" fa-regular fa-heart" id="addlove7"></i>
             </div>
           </div>
           <h2 class="font-bold text-2xl mt-2">Electricity Helpline</h2>
@@ -239,11 +254,13 @@
             <i class="fa-regular fa-copy text-gray-500"></i> Copy
           </button>
           <button
-            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600"
+            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600" id="call7"
           >
             <i class="fa-solid fa-phone"></i> Call
           </button>
         </div>
+
+
 
         <div class="p-8 rounded-3xl bg-white  shadow-lg">
           <div class="flex justify-between">
@@ -251,7 +268,7 @@
               <img src="./assets/brac.png" class="h-8" alt="" />
             </div>
             <div>
-              <i class="fa-regular fa-heart"></i>
+              <i class=" fa-regular fa-heart" id="addlove8"></i>
             </div>
           </div>
           <h2 class="font-bold text-2xl mt-2">Brac Helpline</h2>
@@ -266,11 +283,13 @@
             <i class="fa-regular fa-copy text-gray-500"></i> Copy
           </button>
           <button
-            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600"
+            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600" id="call8"
           >
             <i class="fa-solid fa-phone"></i> Call
           </button>
         </div>
+
+
 
         <div class="p-8 rounded-3xl bg-white  shadow-lg">
           <div class="flex justify-between">
@@ -278,7 +297,7 @@
               <img src="./assets/Bangladesh-Railway.png" class="h-8" alt="" />
             </div>
             <div>
-              <i class="fa-regular fa-heart"></i>
+              <i class=" fa-regular fa-heart" id="addlove9"></i>
             </div>
           </div>
           <h2 class="font-bold text-2xl mt-2">Bangladesh Railway Helpline</h2>
@@ -293,11 +312,13 @@
             <i class="fa-regular fa-copy text-gray-500"></i> Copy
           </button>
           <button
-            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600"
+            class="btn btn-active btn-success mt-5 text-white pl-14 pr-14 bg-green-600" id="call9"
           >
             <i class="fa-solid fa-phone"></i> Call
           </button>
         </div>
+
+
       </div>
       <div class="p-8 rounded-3xl bg-white ml-10 w-[400px]  shadow-lg">
         <div class="flex justify-between items-center">
@@ -349,6 +370,10 @@
           </div>
         </div>
       </div>
+
+
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
