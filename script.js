@@ -45,7 +45,7 @@ function setupCallButton(buttonId, serviceName, serviceNumber) {
       alert(`Calling ${serviceName} ${serviceNumber}`);
       addCallHistory(serviceName, serviceNumber);
     } else {
-      alert("Not enough coins to make a call. You need at least 20 coins.");
+      alert("Not enough coins! You need at least 20 coins to make a call.");
     }
   });
 }
@@ -63,3 +63,11 @@ setupCallButton("call9", "Bangladesh Railway Helpline", "163");
 document.getElementById("clearHistory").addEventListener("click", function () {
   document.querySelector(".call-history").innerHTML = "";
 });
+
+for (let i = 1; i <= 9; i++) {
+  document.getElementById(`addcopy${i}`).addEventListener("click", function (event) {
+    event.preventDefault();
+    const copyCount = document.getElementById("copy-count");
+    copyCount.innerText = parseInt(copyCount.innerText) + 1;
+  });
+}   
